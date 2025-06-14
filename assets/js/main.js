@@ -37,10 +37,11 @@ const voices = [
     'https://arknights.wiki.gg/images/b/b6/Vigna-035.ogg?17f486'
 ];
 
-// ADD COUNT 
+//CLICK FUNCTION 
 $('#vigna_button').on('click', function()
 {
     const element = $(this);
+    this.style.pointerEvents = "none";
 
     //add counts
     count++;
@@ -65,8 +66,9 @@ $('#vigna_button').on('click', function()
     element.addClass(animation);
 
     //removes the animation class when audio stops
-    audio.onended = function () {
-        element.removeClass('tilt');
+    audio.onended = function (){
         element.removeClass(animation);
+        element.removeClass('playing');
+        document.getElementById('vigna_button').style.pointerEvents = "auto";
     };
 });
