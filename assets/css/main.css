@@ -1,0 +1,16 @@
+img
+{
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.animation
+{
+    transition: 1s;
+}
+
+.hover:hover
+{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 0.75rem #131313);
+}
