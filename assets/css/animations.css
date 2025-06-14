@@ -1,0 +1,61 @@
+.tilt
+{
+    animation: tilt 2s linear;
+}
+
+@keyframes tilt 
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    15%
+    {
+        transform: rotate(-15deg);
+    }
+    30%
+    {
+        transform: rotate(0deg);
+    }
+    45%
+    {
+        transform: rotate(15deg);
+    }
+    50%
+    {
+        transform: rotate(0deg);
+    }
+    65%
+    {
+        transform: rotate(-15deg);
+    }
+    80%
+    {
+        transform: rotate(0deg);
+    }
+    95%
+    {
+        transform: rotate(15deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+
+.rotate
+{
+    animation: rotate 2s linear;
+}
+
+@keyframes rotate 
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
