@@ -40,6 +40,8 @@ const voices = [
 // ADD COUNT 
 $('#vigna_button').on('click', function()
 {
+    const element = $(this);
+
     //add counts
     count++;
     $('#counts').html(count);
@@ -52,14 +54,19 @@ $('#vigna_button').on('click', function()
     audio.load();
     audio.play();
 
+    var animation = 'tilt';
+    if(count%10==0)
+    {
+        animation = 'rotate';
+    }
+
     //animation
-    const element = $(this);
     element.addClass('playing');
-    element.addClass('tilt');
+    element.addClass(animation);
 
     //removes the animation class when audio stops
     audio.onended = function () {
         element.removeClass('tilt');
-        element.removeClass('playing');
+        element.removeClass(animation);
     };
 });
