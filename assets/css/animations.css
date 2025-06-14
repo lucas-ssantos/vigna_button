@@ -1,6 +1,6 @@
 .tilt
 {
-    animation: tilt 2s linear;
+    animation: tilt 2s linear infinite;
 }
 
 @keyframes tilt 
@@ -45,7 +45,7 @@
 
 .rotate
 {
-    animation: rotate 2s linear;
+    animation: rotate 2s infinite;
 }
 
 @keyframes rotate 

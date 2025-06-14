@@ -38,11 +38,13 @@
         <link rel="stylesheet" href="assets/css/animations.css">
     </head>
     <body>
-        <!-- Container centralizado vertical e horizontal -->
         <div class="d-flex justify-content-center align-items-center flex-column vh-100">
-            <!-- Imagem responsiva -->
             <label class="mb-3 lbl-counts">Vigna counts: <span id="counts">0</span></label>
             <img id="vigna_button" src="assets/img/vigna_icon.webp" alt="Vigna Button" class="img-fluid animation hover">
+            
+            <audio id="audio-player" hidden="" preload="metadata" data-volume="1">
+                <source id="audio-source" src="" type="application/ogg">
+            </audio>
         </div>
 
         <!-- SCRIPTS -->
