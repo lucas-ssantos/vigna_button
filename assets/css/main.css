@@ -14,3 +14,13 @@ img
     transform: scale(1.1);
     filter: drop-shadow(0 0 0.75rem #131313);
 }
+
+.lbl-counts
+{
+    font-weight: bold;
+}
+
+#counts
+{
+    font-weight: bolder;
+}
